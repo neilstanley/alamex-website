@@ -43,7 +43,7 @@
   }
 
   // --- Contact Form Handling ---
-  // FormSubmit.co redirects back to ?sent=true after submission
+  // Formspree redirects back to ?sent=true after submission
   const form = document.getElementById('contact-form');
   const formSuccess = document.getElementById('form-success');
 
