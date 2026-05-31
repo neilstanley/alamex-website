@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <circle cx="32" cy="32" r="32" fill="#0f1b2d"/>
+  <text x="32" y="44" text-anchor="middle" font-family="Inter, -apple-system, 'Segoe UI', sans-serif" font-size="40" font-weight="700" fill="#ffffff" letter-spacing="-0.02em">A</text>
+  <circle cx="48" cy="46" r="4" fill="#2563eb"/>
+</svg>
