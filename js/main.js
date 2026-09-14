@@ -106,4 +106,18 @@
     });
   });
 
+  // --- CTA click tracking (GA4) ---
+  // Any link with data-cta fires a select_promotion-style event so we can see
+  // lander CTA intent before any Stripe or calendar integration exists.
+  document.querySelectorAll("a[data-cta]").forEach(function (el) {
+    el.addEventListener("click", function () {
+      if (typeof gtag !== "function") return;
+      gtag("event", "cta_click", {
+        cta_id: el.getAttribute("data-cta"),
+        cta_position: el.getAttribute("data-cta-position") || "unknown",
+        page_path: window.location.pathname
+      });
+    });
+  });
+
 })();
