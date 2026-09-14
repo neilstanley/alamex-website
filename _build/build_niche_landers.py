@@ -26,7 +26,7 @@ PACKS = [
 ]
 
 PROCESS = [
-    ("1. Book the &pound;99 call", "Half an hour on your account, your market and the jobs you actually want. You get the plan whether or not you go ahead, and we will tell you if paid search is the wrong tool for you."),
+    ("1. Book the &pound;99 call", "&pound;99 including VAT, half an hour on your account, your market and the jobs you actually want. You get the plan whether or not you go ahead, and we will tell you if paid search is the wrong tool for you."),
     ("2. Start Starter", "If it makes sense, you pay &pound;750 setup plus the first &pound;750 month and your &pound;99 comes off the setup fee. No proposal ping-pong, no three-week sales process."),
     ("3. Live in about 7 to 10 days", "A short kickoff checklist from us (access, conversion tracking, service areas, the jobs you want and the ones you do not), then we build the campaigns, set the negatives and turn it on."),
     ("4. Weekly written update", "Every week you get a plain-English update: what happened, what we changed, what we are doing next. A human steps in when something breaks."),
@@ -38,13 +38,13 @@ FAQS = [
     ("Is my Google spend included?",
      "No. You pay Google directly with your own card, so the ad budget is yours and stays visible to you. Alamex bills the setup fee and the monthly management fee only."),
     ("Do I pay VAT on top?",
-     "Yes. Alamex Ltd is VAT registered, so VAT at the prevailing UK rate is added at checkout. Every price on this page is ex-VAT, so Starter is &pound;750 setup plus VAT and &pound;750 a month plus VAT. If you are VAT registered yourself you reclaim it in the normal way. Your Google ad spend is billed to you by Google, not by us."),
+     "The &pound;99 strategy call is the one price on this page that already includes VAT, so &pound;99 is what you pay. Everything else is ex-VAT: Alamex Ltd is VAT registered, so VAT at the prevailing UK rate is added at checkout, and Starter is &pound;750 setup plus VAT and &pound;750 a month plus VAT. If you are VAT registered yourself you reclaim it in the normal way. Your Google ad spend is billed to you by Google, not by us."),
     ("What is the difference between Starter and Growth?",
      "Scope and attention. Starter is one campaign type built and managed properly, for accounts spending up to about &pound;1.5k a month. Growth covers a wider account with more campaigns and more search term work, for roughly &pound;1.5k to &pound;5k a month of spend."),
     ("What do you mean by AI-written updates?",
      "The weekly performance update is drafted by our own reporting system straight from the account data, so it goes out on time and the numbers are not massaged. A human reviews anything unusual and contacts you directly when there is a decision to make or something has gone wrong."),
     ("What happens to the &pound;99 strategy call fee if I sign up?",
-     "It comes off your setup fee if you buy a pack within fourteen days of the call. If you do not, you keep the notes and the plan and owe us nothing further. You pay for the call when you book it, and we email you within one working day with times."),
+     "The &pound;99 includes VAT, and it comes off your setup fee if you buy a pack within fourteen days of the call. If you do not, you keep the notes and the plan and owe us nothing further. You pay for the call when you book it, and we email you within one working day with times."),
 ]
 
 INCLUDED_LEFT = [
@@ -274,11 +274,11 @@ $faq_jsonld
       <p>$lede</p>
       <div style="display: flex; flex-wrap: wrap; gap: var(--space-md); margin-top: var(--space-xl);">
         <!-- Stripe payment link, plink alamex_agency=call. 99 ex-VAT, VAT added at checkout. -->
-        <a href="https://buy.stripe.com/fZuaEXgGT5Pg1nr3CA1ck00" class="btn btn--white btn--lg" data-cta="strategy_call" data-cta-position="hero">Book a &pound;99 strategy call</a>
+        <a href="https://buy.stripe.com/00w28r76jgtU2rv1us1ck02" class="btn btn--white btn--lg" data-cta="strategy_call" data-cta-position="hero">Book a &pound;99 strategy call</a>
         <a href="#packs" class="btn btn--outline btn--lg" style="border-color: rgba(255,255,255,0.35); color: #fff;" data-cta="view_packs" data-cta-position="hero">See the packs</a>
       </div>
-      <p style="font-size: 0.95rem; color: #cbd5e1; margin-top: var(--space-lg); max-width: 640px;"><strong style="color: #fff;">What happens next:</strong> the call is &pound;99 and takes half an hour. If it makes sense, the next stage is Starter at &pound;750 setup plus &pound;750 a month, and your &pound;99 comes off the setup fee.</p>
-      <p style="font-size: 0.9rem; color: #94a3b8; margin-top: var(--space-md);">All prices ex-VAT, and VAT is added at checkout. You pay Google directly for the ad spend. Thirty days' notice to cancel, any time.</p>
+      <p style="font-size: 0.95rem; color: #cbd5e1; margin-top: var(--space-lg); max-width: 640px;"><strong style="color: #fff;">What happens next:</strong> the call is &pound;99 including VAT and takes half an hour. If it makes sense, the next stage is Starter at &pound;750 setup plus &pound;750 a month, and your &pound;99 comes off the setup fee.</p>
+      <p style="font-size: 0.9rem; color: #94a3b8; margin-top: var(--space-md);">The call is &pound;99 including VAT. Pack prices are ex-VAT, with VAT added at checkout. You pay Google directly for the ad spend. Thirty days' notice to cancel, any time.</p>
     </div>
   </section>
 
@@ -404,10 +404,10 @@ $faq_items
   <section class="cta-banner">
     <div class="container">
       <h2>$cta_heading</h2>
-      <p>Book the &pound;99 call and we will tell you honestly whether paid search is worth it for you. If it is, the next stage is Starter at &pound;750 setup plus &pound;750 a month, and your &pound;99 comes off the setup fee. If it is not, we will say so and you will have the plan anyway.</p>
+      <p>Book the &pound;99 call, including VAT, and we will tell you honestly whether paid search is worth it for you. If it is, the next stage is Starter at &pound;750 setup plus &pound;750 a month, and your &pound;99 comes off the setup fee. If it is not, we will say so and you will have the plan anyway.</p>
       <div style="display: flex; flex-wrap: wrap; gap: var(--space-md); justify-content: center; margin-top: var(--space-xl);">
         <!-- Stripe payment link, plink alamex_agency=call. 99 ex-VAT, VAT added at checkout. -->
-        <a href="https://buy.stripe.com/fZuaEXgGT5Pg1nr3CA1ck00" class="btn btn--white btn--lg" data-cta="strategy_call" data-cta-position="footer">Book a &pound;99 strategy call</a>
+        <a href="https://buy.stripe.com/00w28r76jgtU2rv1us1ck02" class="btn btn--white btn--lg" data-cta="strategy_call" data-cta-position="footer">Book a &pound;99 strategy call</a>
         <!-- Stripe payment link, plink alamex_agency=starter. 750 setup + 750/mo, both ex-VAT. -->
         <a href="https://buy.stripe.com/9B67sLaivb9A2rvfli1ck01" class="btn btn--outline btn--lg" style="border-color: rgba(255,255,255,0.35); color: #fff;" data-cta="start_starter" data-cta-position="footer">Or start Starter &mdash; &pound;750 setup</a>
       </div>
