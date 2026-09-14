@@ -44,7 +44,7 @@ FAQS = [
     ("What do you mean by AI-written updates?",
      "The weekly performance update is drafted by our own reporting system straight from the account data, so it goes out on time and the numbers are not massaged. A human reviews anything unusual and contacts you directly when there is a decision to make or something has gone wrong."),
     ("What happens to the &pound;99 strategy call fee if I sign up?",
-     "It comes off your setup fee if you buy a pack within fourteen days of the call. If you do not, you keep the notes and the plan and owe us nothing further."),
+     "It comes off your setup fee if you buy a pack within fourteen days of the call. If you do not, you keep the notes and the plan and owe us nothing further. You pay for the call when you book it, and we email you within one working day with times."),
 ]
 
 INCLUDED_LEFT = [
@@ -273,8 +273,8 @@ $faq_jsonld
       <h1>$h1</h1>
       <p>$lede</p>
       <div style="display: flex; flex-wrap: wrap; gap: var(--space-md); margin-top: var(--space-xl);">
-        <!-- TODO: calendar - point at the real booking URL (/book-strategy-call) once it exists -->
-        <a href="../../contact.html?intent=strategy-call" class="btn btn--white btn--lg" data-cta="strategy_call" data-cta-position="hero">Book a &pound;99 strategy call</a>
+        <!-- Stripe payment link, plink alamex_agency=call. 99 ex-VAT, VAT added at checkout. -->
+        <a href="https://buy.stripe.com/fZuaEXgGT5Pg1nr3CA1ck00" class="btn btn--white btn--lg" data-cta="strategy_call" data-cta-position="hero">Book a &pound;99 strategy call</a>
         <a href="#packs" class="btn btn--outline btn--lg" style="border-color: rgba(255,255,255,0.35); color: #fff;" data-cta="view_packs" data-cta-position="hero">See the packs</a>
       </div>
       <p style="font-size: 0.95rem; color: #cbd5e1; margin-top: var(--space-lg); max-width: 640px;"><strong style="color: #fff;">What happens next:</strong> the call is &pound;99 and takes half an hour. If it makes sense, the next stage is Starter at &pound;750 setup plus &pound;750 a month, and your &pound;99 comes off the setup fee.</p>
@@ -406,10 +406,10 @@ $faq_items
       <h2>$cta_heading</h2>
       <p>Book the &pound;99 call and we will tell you honestly whether paid search is worth it for you. If it is, the next stage is Starter at &pound;750 setup plus &pound;750 a month, and your &pound;99 comes off the setup fee. If it is not, we will say so and you will have the plan anyway.</p>
       <div style="display: flex; flex-wrap: wrap; gap: var(--space-md); justify-content: center; margin-top: var(--space-xl);">
-        <!-- TODO: calendar - point at the real booking URL (/book-strategy-call) once it exists -->
-        <a href="../../contact.html?intent=strategy-call" class="btn btn--white btn--lg" data-cta="strategy_call" data-cta-position="footer">Book a &pound;99 strategy call</a>
-        <!-- TODO: Stripe Checkout - point at /start/starter once the Stripe product and webhook exist -->
-        <a href="../../contact.html?intent=starter" class="btn btn--outline btn--lg" style="border-color: rgba(255,255,255,0.35); color: #fff;" data-cta="start_starter" data-cta-position="footer">Or start Starter &mdash; &pound;750 setup</a>
+        <!-- Stripe payment link, plink alamex_agency=call. 99 ex-VAT, VAT added at checkout. -->
+        <a href="https://buy.stripe.com/fZuaEXgGT5Pg1nr3CA1ck00" class="btn btn--white btn--lg" data-cta="strategy_call" data-cta-position="footer">Book a &pound;99 strategy call</a>
+        <!-- Stripe payment link, plink alamex_agency=starter. 750 setup + 750/mo, both ex-VAT. -->
+        <a href="https://buy.stripe.com/9B67sLaivb9A2rvfli1ck01" class="btn btn--outline btn--lg" style="border-color: rgba(255,255,255,0.35); color: #fff;" data-cta="start_starter" data-cta-position="footer">Or start Starter &mdash; &pound;750 setup</a>
       </div>
     </div>
   </section>
