@@ -335,7 +335,7 @@ $notfor_items
   </section>
 
   <!-- 4. Packs -->
-  <section class="section" id="packs">
+  <section class="section" id="packs" style="scroll-margin-top: 88px;">
     <div class="container">
       <div class="section-header text-center">
         <h2>Three packs, no proposals</h2>
