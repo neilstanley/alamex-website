@@ -17,11 +17,11 @@ CASE_STUDY = ("A UK services business came to us with a Search account that look
               "them when something needed a decision.")
 
 PACKS = [
-    ("Starter", "&pound;750", "&pound;750 / month", "Up to &pound;1.5k a month with Google",
+    ("Starter", "&pound;750", "&pound;750 / month", "up to &pound;1.5k a month",
      "One campaign type, built properly. The right fit if you are starting from nothing or your current account is a mess."),
-    ("Growth", "&pound;1,250", "&pound;1,250 / month", "&pound;1.5k&ndash;&pound;5k a month with Google",
+    ("Growth", "&pound;1,250", "&pound;1,250 / month", "&pound;1.5k to &pound;5k a month",
      "More campaigns, more search terms to keep on top of, and tighter budget pacing across them."),
-    ("Scale", "&pound;2,000", "&pound;2,000 / month or 12% of spend", "Typically &pound;5k+ a month with Google",
+    ("Scale", "&pound;2,000", "&pound;2,000 / month or 12% of spend", "typically &pound;5k or more a month",
      "For accounts where the spend is large enough that half a percentage point of waste matters."),
 ]
 
