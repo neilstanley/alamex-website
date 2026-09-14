@@ -109,6 +109,8 @@
   // --- CTA click tracking (GA4) ---
   // Any link with data-cta fires a select_promotion-style event so we can see
   // lander CTA intent before any Stripe or calendar integration exists.
+  if (typeof gtag === "function") { gtag("config", "AW-806204694"); }
+
   document.querySelectorAll("a[data-cta]").forEach(function (el) {
     el.addEventListener("click", function () {
       if (typeof gtag !== "function") return;
@@ -116,6 +118,12 @@
         cta_id: el.getAttribute("data-cta"),
         cta_position: el.getAttribute("data-cta-position") || "unknown",
         page_path: window.location.pathname
+      });
+      // Google Ads proxy conversion: a CTA click, not a sale. Paid media only.
+      gtag("event", "conversion", {
+        send_to: "AW-806204694/KarZCKSnz_ccEJbqtoAD",
+        value: 0,
+        currency: "GBP"
       });
     });
   });
