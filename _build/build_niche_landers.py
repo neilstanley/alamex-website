@@ -287,7 +287,7 @@ $faq_jsonld
     <div class="container">
       <div class="stats">
         <div>
-          <div class="stat__number">&pound;4m+</div>
+          <div class="stat__number">&pound;5m</div>
           <div class="stat__label">Of our own money spent on Google Ads</div>
         </div>
         <div>
@@ -307,7 +307,7 @@ $faq_jsonld
           <div class="stat__label">Average ROAS Improvement</div>
         </div>
       </div>
-      <p class="text-center mt-xl" style="max-width: 760px; margin-left: auto; margin-right: auto; color: var(--text-light);">We are not only spending other people's money. Alamex runs its own portfolio of websites and apps, and we have put more than &pound;4 million of our own budget through Google Ads. Everything we do on a client account, we have already paid to learn on our own.</p>
+      <p class="text-center mt-xl" style="max-width: 760px; margin-left: auto; margin-right: auto; color: var(--text-light);">We are not only spending other people's money. Alamex runs its own portfolio of websites and apps, and we have put nearly &pound;5 million of our own budget through Google Ads. Everything we do on a client account, we have already paid to learn on our own.</p>
       <div class="testimonial mt-xl">
         <blockquote>&ldquo;$case_study&rdquo;</blockquote>
         <cite>Anonymised client account, UK services business</cite>
