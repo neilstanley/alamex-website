@@ -121,7 +121,7 @@
     function track(name, extra){ try { gtag('event', name, extra || {}); } catch(e){} }
     ['dl-top','dl-mid'].forEach(function(id){
       document.getElementById(id).addEventListener('click', function(){
-        track('file_download', {file_name: 'hacked-x-first-hour-checklist.pdf', link_id: id});
+        track('checklist_download', {file_name: 'hacked-x-first-hour-checklist.pdf', link_id: id});
         track('conversion', {send_to: 'AW-806204694/XNHJCPvO5JgdEJbqtoAD', value: 1.0, currency: 'USD'});
       });
     });
