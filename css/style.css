@@ -521,7 +521,8 @@ p:last-child { margin-bottom: 0; }
   color: var(--accent);
 }
 
-.contact-info__item h4 { margin-bottom: var(--space-xs); }
+.contact-info__item h4,
+.contact-info__item h3 { font-size: 1.125rem; margin-bottom: var(--space-xs); }
 .contact-info__item p { margin: 0; font-size: 0.95rem; }
 
 /* --- Footer --- */

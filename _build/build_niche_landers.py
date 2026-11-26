@@ -235,7 +235,7 @@ TEMPLATE = Template(r"""<!DOCTYPE html>
   <meta property="og:type" content="website">
 
   <link rel="preload" href="/fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="/css/style.css?v=20261126f">
+  <link rel="stylesheet" href="/css/style.css?v=20261126g">
 
   <script type="application/ld+json">
 $service_jsonld
@@ -285,7 +285,7 @@ $faq_jsonld
     <div class="container">
       <div class="stats">
         <div>
-          <div class="stat__number">&pound;5m</div>
+          <div class="stat__number">&pound;5m+</div>
           <div class="stat__label">Of our own money spent on Google Ads</div>
         </div>
         <div>
@@ -293,23 +293,11 @@ $faq_jsonld
           <div class="stat__label">Years in Search Marketing</div>
         </div>
         <div>
-          <div class="stat__number">200+</div>
-          <div class="stat__label">Campaigns Managed</div>
-        </div>
-        <div>
-          <div class="stat__number">95%</div>
-          <div class="stat__label">Client Retention Rate</div>
-        </div>
-        <div>
-          <div class="stat__number">3.2x</div>
-          <div class="stat__label">Average ROAS Improvement</div>
+          <div class="stat__number">30 days</div>
+          <div class="stat__label">Notice to cancel, no lock-in</div>
         </div>
       </div>
-      <p class="text-center mt-xl" style="max-width: 760px; margin-left: auto; margin-right: auto; color: var(--text-light);">We are not only spending other people's money. Alamex runs its own portfolio of websites and apps, and we have put nearly &pound;5 million of our own budget through Google Ads. Everything we do on a client account, we have already paid to learn on our own.</p>
-      <div class="testimonial mt-xl">
-        <blockquote>&ldquo;$case_study&rdquo;</blockquote>
-        <cite>Anonymised client account, UK services business</cite>
-      </div>
+      <p class="text-center mt-xl" style="max-width: 760px; margin-left: auto; margin-right: auto; color: var(--text-light);">We are not only spending other people's money. Alamex runs its own portfolio of websites and apps, and we have put over &pound;5 million of our own budget through Google Ads. Everything we do on a client account, we have already paid to learn on our own.</p>
     </div>
   </section>
 
