@@ -1,3 +1,13 @@
+/* Inter, self-hosted (SIL OFL, see /fonts/Inter-OFL.txt) */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 100 900;
+  src: url(/fonts/inter-latin-wght-normal.woff2) format('woff2');
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
 /* ============================================
    ALAMEX — Design System & Stylesheet
    Clean, minimal, professional agency site
@@ -353,7 +363,12 @@ p:last-child { margin-bottom: 0; }
   margin-bottom: var(--space-md);
 }
 
-.process__step h4 { margin-bottom: var(--space-sm); }
+.process__step h4,
+.process__step h3 { font-size: 1.125rem; margin-bottom: var(--space-sm); }
+
+/* Four-up card grid (homepage services) */
+@media (min-width: 1100px) { .card-grid--4 { grid-template-columns: repeat(4, 1fr); } .card-grid--4 .card { padding: var(--space-xl); } }
+@media (min-width: 641px) and (max-width: 1099px) { .card-grid--4 { grid-template-columns: repeat(2, 1fr); } }
 
 /* --- Feature List (service pages) --- */
 .feature-list { list-style: none; padding: 0; }
@@ -494,9 +509,10 @@ p:last-child { margin-bottom: 0; }
   margin-bottom: var(--space-2xl);
 }
 
-.footer__brand p { margin-top: var(--space-md); font-size: 0.9rem; line-height: 1.7; }
+.footer__brand p { margin-top: var(--space-md); font-size: 0.9rem; line-height: 1.7; color: #94a3b8; }
 
-.footer h4 {
+.footer h4,
+.footer h3.footer__heading {
   color: var(--white);
   font-size: 0.85rem;
   text-transform: uppercase;

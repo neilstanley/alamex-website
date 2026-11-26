@@ -28,9 +28,7 @@
   <meta property="og:url" content="https://alamex.com/google-ads/heating-engineers/">
   <meta property="og:type" content="website">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="preload" href="/fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="/css/style.css">
 
   <script type="application/ld+json">
@@ -115,6 +113,7 @@
       <nav class="nav" id="nav" aria-label="Main navigation">
         <a href="/" class="nav__link">Home</a>
         <a href="/about/" class="nav__link">About</a>
+        <a href="/website-design/" class="nav__link">Websites</a>
         <a href="/seo-services/" class="nav__link">SEO/AEO</a>
         <a href="/google-ads/" class="nav__link nav__link--active">Google Ads</a>
         <a href="/use-ai-in-my-business/" class="nav__link">AI for Business</a>
@@ -304,19 +303,19 @@
       </div>
       <div class="process">
         <div class="process__step">
-          <h4>1. Book the &pound;99 call</h4>
+          <h3>1. Book the &pound;99 call</h3>
           <p>&pound;99 including VAT, half an hour on your account, your market and the jobs you actually want. You get the plan whether or not you go ahead, and we will tell you if paid search is the wrong tool for you.</p>
         </div>
         <div class="process__step">
-          <h4>2. Start Starter</h4>
+          <h3>2. Start Starter</h3>
           <p>If it makes sense, you pay &pound;750 setup plus the first &pound;750 month and your &pound;99 comes off the setup fee. No proposal ping-pong, no three-week sales process.</p>
         </div>
         <div class="process__step">
-          <h4>3. Live in about 7 to 10 days</h4>
+          <h3>3. Live in about 7 to 10 days</h3>
           <p>A short kickoff checklist from us (access, conversion tracking, service areas, the jobs you want and the ones you do not), then we build the campaigns, set the negatives and turn it on.</p>
         </div>
         <div class="process__step">
-          <h4>4. Weekly written update</h4>
+          <h3>4. Weekly written update</h3>
           <p>Every week you get a plain-English update: what happened, what we changed, what we are doing next. A human steps in when something breaks.</p>
         </div>
       </div>
@@ -376,18 +375,19 @@
       <div class="footer__grid">
         <div class="footer__brand">
           <a href="/" class="logo" style="color: #fff;">Alamex<span>.</span></a>
-          <p>Specialist SEO and Google Ads agency based in Bath, UK. Helping businesses grow through the power of search.</p>
+          <p>Website design, SEO and Google Ads agency based in Bath, UK. Fast websites and search marketing for businesses in the UK and South Africa.</p>
         </div>
         <div>
-          <h4>Services</h4>
+          <h3 class="footer__heading">Services</h3>
           <ul class="footer__links">
+            <li><a href="/website-design/">Website Design</a></li>
             <li><a href="/seo-services/">SEO/AEO</a></li>
             <li><a href="/google-ads/">Google Ads</a></li>
             <li><a href="/use-ai-in-my-business/">AI for Business</a></li>
           </ul>
         </div>
         <div>
-          <h4>Company</h4>
+          <h3 class="footer__heading">Company</h3>
           <ul class="footer__links">
             <li><a href="/about/">About Us</a></li>
             <li><a href="/contact/">Contact</a></li>
@@ -395,7 +395,7 @@
           </ul>
         </div>
         <div>
-          <h4>Contact</h4>
+          <h3 class="footer__heading">Contact</h3>
           <ul class="footer__links">
             <li><a href="mailto:hello@alamex.com">hello@alamex.com</a></li>
             <li>11 Laura Place</li>
@@ -415,6 +415,6 @@
     </div>
   </footer>
 
-  <script src="/js/main.js"></script>
+  <script src="/js/main.js" defer></script>
 </body>
 </html>

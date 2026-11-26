@@ -27,10 +27,7 @@
   <meta property="og:description" content="Practical AI consulting from an agency that runs its own AI-powered portfolio. Paid AI Opportunity Call from &pound;250, AI Marketing Audit from &pound;2,500.">
   <meta property="og:url" content="https://alamex.com/use-ai-in-my-business/">
   <meta property="og:type" content="website">
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="preload" href="/fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="/css/style.css">
 
   <script type="application/ld+json">
@@ -135,6 +132,7 @@
       <nav class="nav" id="nav" aria-label="Main navigation">
         <a href="/" class="nav__link">Home</a>
         <a href="/about/" class="nav__link">About</a>
+        <a href="/website-design/" class="nav__link">Websites</a>
         <a href="/seo-services/" class="nav__link">SEO/AEO</a>
         <a href="/google-ads/" class="nav__link">Google Ads</a>
         <a href="/use-ai-in-my-business/" class="nav__link nav__link--active">AI for Business</a>
@@ -291,19 +289,19 @@
       </div>
       <div class="process">
         <div class="process__step">
-          <h4>Tell us about your business</h4>
+          <h3>Tell us about your business</h3>
           <p>Fill in the form below. Takes two minutes. It helps us understand whether we are the right fit before we get on a call.</p>
         </div>
         <div class="process__step">
-          <h4>Book your AI Opportunity Call</h4>
+          <h3>Book your AI Opportunity Call</h3>
           <p>If we are a fit, we send a calendar link and a Stripe invoice for the &pound;250 call fee. 30 minutes, focused, no sales theatre.</p>
         </div>
         <div class="process__step">
-          <h4>Decide what to do next</h4>
+          <h3>Decide what to do next</h3>
           <p>After the call you will have a clearer view of where AI fits in your business. Most people commission the audit. Some do not. Either outcome is fine.</p>
         </div>
         <div class="process__step">
-          <h4>Run the audit</h4>
+          <h3>Run the audit</h3>
           <p>Two weeks, fixed price, real answers. You walk out with a roadmap your team will actually use.</p>
         </div>
       </div>
@@ -440,18 +438,19 @@
       <div class="footer__grid">
         <div class="footer__brand">
           <a href="/" class="logo" style="color: #fff;">Alamex<span>.</span></a>
-          <p>Specialist SEO, Google Ads and AI consulting agency based in Bath, UK. Helping businesses grow through search and practical AI implementation.</p>
+          <p>Website design, SEO, Google Ads and AI consulting agency based in Bath, UK. Fast websites and search marketing for businesses in the UK and South Africa.</p>
         </div>
         <div>
-          <h4>Services</h4>
+          <h3 class="footer__heading">Services</h3>
           <ul class="footer__links">
+            <li><a href="/website-design/">Website Design</a></li>
             <li><a href="/seo-services/">SEO/AEO</a></li>
             <li><a href="/google-ads/">Google Ads</a></li>
             <li><a href="/use-ai-in-my-business/">AI for Business</a></li>
           </ul>
         </div>
         <div>
-          <h4>Company</h4>
+          <h3 class="footer__heading">Company</h3>
           <ul class="footer__links">
             <li><a href="/about/">About Us</a></li>
             <li><a href="/contact/">Contact</a></li>
@@ -459,7 +458,7 @@
           </ul>
         </div>
         <div>
-          <h4>Contact</h4>
+          <h3 class="footer__heading">Contact</h3>
           <ul class="footer__links">
             <li><a href="mailto:hello@alamex.com">hello@alamex.com</a></li>
             <li>11 Laura Place</li>
@@ -479,6 +478,6 @@
     </div>
   </footer>
 
-  <script src="/js/main.js"></script>
+  <script src="/js/main.js" defer></script>
 </body>
 </html>

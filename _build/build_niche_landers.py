@@ -234,9 +234,7 @@ TEMPLATE = Template(r"""<!DOCTYPE html>
   <meta property="og:url" content="https://alamex.com/google-ads/$slug/">
   <meta property="og:type" content="website">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="preload" href="/fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="/css/style.css">
 
   <script type="application/ld+json">
@@ -255,6 +253,7 @@ $faq_jsonld
       <nav class="nav" id="nav" aria-label="Main navigation">
         <a href="/" class="nav__link">Home</a>
         <a href="/about/" class="nav__link">About</a>
+        <a href="/website-design/" class="nav__link">Websites</a>
         <a href="/seo-services/" class="nav__link">SEO/AEO</a>
         <a href="/google-ads/" class="nav__link nav__link--active">Google Ads</a>
         <a href="/use-ai-in-my-business/" class="nav__link">AI for Business</a>
@@ -420,18 +419,19 @@ $faq_items
       <div class="footer__grid">
         <div class="footer__brand">
           <a href="/" class="logo" style="color: #fff;">Alamex<span>.</span></a>
-          <p>Specialist SEO and Google Ads agency based in Bath, UK. Helping businesses grow through the power of search.</p>
+          <p>Website design, SEO and Google Ads agency based in Bath, UK. Fast websites and search marketing for businesses in the UK and South Africa.</p>
         </div>
         <div>
-          <h4>Services</h4>
+          <h3 class="footer__heading">Services</h3>
           <ul class="footer__links">
+            <li><a href="/website-design/">Website Design</a></li>
             <li><a href="/seo-services/">SEO/AEO</a></li>
             <li><a href="/google-ads/">Google Ads</a></li>
             <li><a href="/use-ai-in-my-business/">AI for Business</a></li>
           </ul>
         </div>
         <div>
-          <h4>Company</h4>
+          <h3 class="footer__heading">Company</h3>
           <ul class="footer__links">
             <li><a href="/about/">About Us</a></li>
             <li><a href="/contact/">Contact</a></li>
@@ -439,7 +439,7 @@ $faq_items
           </ul>
         </div>
         <div>
-          <h4>Contact</h4>
+          <h3 class="footer__heading">Contact</h3>
           <ul class="footer__links">
             <li><a href="mailto:hello@alamex.com">hello@alamex.com</a></li>
             <li>11 Laura Place</li>
@@ -459,7 +459,7 @@ $faq_items
     </div>
   </footer>
 
-  <script src="/js/main.js"></script>
+  <script src="/js/main.js" defer></script>
 </body>
 </html>
 """)
@@ -494,7 +494,7 @@ def pack_cards():
 
 def process_steps():
     return "\n".join(
- '        <div class="process__step">\n          <h4>%s</h4>\n          <p>%s</p>\n        </div>' % (h, b)
+ '        <div class="process__step">\n          <h3>%s</h3>\n          <p>%s</p>\n        </div>' % (h, b)
         for h, b in PROCESS)
 
 def faq_items():
