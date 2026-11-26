@@ -235,7 +235,7 @@ TEMPLATE = Template(r"""<!DOCTYPE html>
   <meta property="og:type" content="website">
 
   <link rel="preload" href="/fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/style.css?v=20261126b">
 
   <script type="application/ld+json">
 $service_jsonld
@@ -419,7 +419,7 @@ $faq_items
       <div class="footer__grid">
         <div class="footer__brand">
           <a href="/" class="logo" style="color: #fff;">Alamex<span>.</span></a>
-          <p>Website design, SEO and Google Ads agency based in Bath, UK. Fast websites and search marketing for businesses in the UK, South Africa and internationally.</p>
+          <p>Website design, SEO and Google Ads agency based in Bath, UK. Fast websites and search marketing for businesses in the UK and South Africa.</p>
         </div>
         <div>
           <h3 class="footer__heading">Services</h3>
