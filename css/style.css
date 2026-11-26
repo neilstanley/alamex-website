@@ -200,12 +200,12 @@ p:last-child { margin-bottom: 0; }
 }
 
 .btn--primary {
-  background: var(--accent);
+  background: var(--navy);
   color: var(--white);
 }
 
 .btn--primary:hover {
-  background: var(--accent-hover);
+  background: var(--navy-light);
   color: var(--white);
   transform: translateY(-1px);
   box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
@@ -218,12 +218,12 @@ p:last-child { margin-bottom: 0; }
 
 .btn--outline {
   background: transparent;
-  color: var(--accent);
-  border: 1.5px solid var(--accent);
+  color: var(--navy);
+  border: 1.5px solid var(--navy);
 }
 
 .btn--outline:hover {
-  background: var(--accent);
+  background: var(--navy);
   color: var(--white);
   transform: translateY(-1px);
 }

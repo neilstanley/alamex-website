@@ -144,7 +144,8 @@
   document.body.classList.add('has-sticky-cta');
   var state = { top: true };
   // Hide only while the closing call-to-action button itself is on screen.
-  var ends = Array.prototype.slice.call(document.querySelectorAll('.cta-banner .btn'));
+  // ...and while any form is on screen, so it never competes with a form being filled in.
+  var ends = Array.prototype.slice.call(document.querySelectorAll('.cta-banner .btn, form'));
   var endSeen = ends.map(function () { return false; });
   function update() {
     var atEnd = endSeen.some(function (v) { return v; });

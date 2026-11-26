@@ -235,7 +235,7 @@ TEMPLATE = Template(r"""<!DOCTYPE html>
   <meta property="og:type" content="website">
 
   <link rel="preload" href="/fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="/css/style.css?v=20261126e">
+  <link rel="stylesheet" href="/css/style.css?v=20261126f">
 
   <script type="application/ld+json">
 $service_jsonld
@@ -457,7 +457,7 @@ $faq_items
     </div>
   </footer>
 
-  <script src="/js/main.js?v=20261126d" defer></script>
+  <script src="/js/main.js?v=20261126f" defer></script>
 </body>
 </html>
 """)
