@@ -270,17 +270,16 @@ p:last-child { margin-bottom: 0; }
 }
 
 .hero__meta {
-  margin-top: var(--space-2xl);
-  margin-bottom: 0;
-  font-size: 1rem;
-  line-height: 1.6;
+  margin-top: calc(-1 * var(--space-lg));
+  margin-bottom: var(--space-2xl);
+  font-size: 1.2rem;
+  line-height: 1.7;
   color: #cbd5e1;
-  max-width: 560px;
 }
 
 @media (max-width: 640px) {
   .hero__subtitle { font-size: 1.05rem; line-height: 1.6; margin-bottom: var(--space-xl); }
-  .hero__meta { font-size: 0.95rem; margin-top: var(--space-xl); }
+  .hero__meta { font-size: 1.05rem; line-height: 1.6; margin-top: calc(-1 * var(--space-md)); margin-bottom: var(--space-xl); }
   /* Phones: the hero fills exactly the first screen (below the fixed header) */
   .hero {
     min-height: 100vh;
@@ -696,4 +695,23 @@ p:last-child { margin-bottom: 0; }
   .hero__actions .btn { width: 100%; justify-content: center; }
   .stats { grid-template-columns: 1fr; }
   .footer__grid { grid-template-columns: 1fr; }
+}
+
+/* --- Pinned call to action (phones only) --- */
+.sticky-cta { display: none; }
+@media (max-width: 640px) {
+  .sticky-cta {
+    display: block;
+    position: fixed;
+    left: 0; right: 0; bottom: 0;
+    z-index: 900;
+    padding: 10px 16px calc(10px + env(safe-area-inset-bottom));
+    background: rgba(15, 27, 45, 0.96);
+    box-shadow: 0 -4px 16px rgba(0, 0, 0, 0.18);
+    transform: translateY(110%);
+    transition: transform 0.25s ease;
+  }
+  .sticky-cta--show { transform: translateY(0); }
+  .sticky-cta .btn { display: block; width: 100%; text-align: center; }
+  body.has-sticky-cta { padding-bottom: calc(76px + env(safe-area-inset-bottom)); }
 }

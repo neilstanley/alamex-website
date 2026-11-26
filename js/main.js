@@ -129,3 +129,28 @@
   });
 
 })();
+
+// --- Pinned "Get in Touch" bar (phones only) ---
+// Appears once the top section has scrolled away, hides while the closing call to
+// action is on screen, and is not shown on the contact page itself.
+(function () {
+  if (location.pathname.indexOf('/contact') === 0) return;
+  var top = document.querySelector('.hero, .page-header');
+  if (!top || !('IntersectionObserver' in window)) return;
+  var bar = document.createElement('div');
+  bar.className = 'sticky-cta';
+  bar.innerHTML = '<a href="/contact/" class="btn btn--primary" data-cta="sticky_contact" data-cta-position="sticky">Get in Touch</a>';
+  document.body.appendChild(bar);
+  document.body.classList.add('has-sticky-cta');
+  var state = { top: true };
+  var ends = Array.prototype.slice.call(document.querySelectorAll('.cta-banner, footer'));
+  var endSeen = ends.map(function () { return false; });
+  function update() {
+    var atEnd = endSeen.some(function (v) { return v; });
+    bar.classList.toggle('sticky-cta--show', !state.top && !atEnd);
+  }
+  new IntersectionObserver(function (e) { state.top = e[0].isIntersecting; update(); }).observe(top);
+  ends.forEach(function (el, i) {
+    new IntersectionObserver(function (e) { endSeen[i] = e[0].isIntersecting; update(); }).observe(el);
+  });
+})();
