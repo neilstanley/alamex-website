@@ -211,6 +211,11 @@ p:last-child { margin-bottom: 0; }
   box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
 }
 
+/* Header / menu "Get in Touch": dark navy to match the hero */
+.nav .btn--primary { background: var(--navy); color: var(--white); }
+.nav .btn--primary:hover { background: var(--navy-light); color: var(--white); }
+
+
 .btn--outline {
   background: transparent;
   color: var(--accent);
@@ -713,5 +718,5 @@ p:last-child { margin-bottom: 0; }
   }
   .sticky-cta--show { transform: translateY(0); }
   .sticky-cta .btn { display: block; width: 100%; text-align: center; }
-  body.has-sticky-cta { padding-bottom: calc(76px + env(safe-area-inset-bottom)); }
+  body.has-sticky-cta .footer { padding-bottom: calc(var(--space-xl) + 76px + env(safe-area-inset-bottom)); }
 }
